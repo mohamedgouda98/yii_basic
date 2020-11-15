@@ -5,19 +5,19 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "catrgories".
+ * This is the model class for table "categories".
  *
  * @property int $id
  * @property string $name
  */
-class Catrgory extends \yii\db\ActiveRecord
+class Categories extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'catrgories';
+        return 'categories';
     }
 
     /**

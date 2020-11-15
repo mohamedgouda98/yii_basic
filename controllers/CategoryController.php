@@ -2,6 +2,9 @@
 
 namespace app\controllers;
 
+use app\models\Categories;
+use yii\helpers\VarDumper;
+
 class CategoryController extends \yii\web\Controller
 {
     public function actionCreate()
@@ -11,7 +14,12 @@ class CategoryController extends \yii\web\Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        /**
+         * @var  $categories
+         */
+        $categories = Categories::find()->all();
+
+        return $this->render('index',array('categories' => $categories));
     }
 
 }
