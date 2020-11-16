@@ -41,8 +41,11 @@ AppAsset::register($this);
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Categories', 'url' => ['/category/index']],
             ['label' => 'Jobs', 'url' => ['/jobs/index']],
+            ['label' => 'Register', 'url' => ['/user/register']],
+
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
+
+            ['label' => 'Login', 'url' => ['/user/login']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')

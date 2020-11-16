@@ -113,3 +113,23 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.card{
+    border: #849598 2px solid;
+    margin-bottom: 20px;
+}
+.card-header{
+    background-color: #c4e3f3;
+    font-weight: bold;
+    padding: 10px;
+    font-size:15px
+}
+
+.card .card-body{
+    margin-bottom: 10px;
+}
+
+.card .card-body .card-title{
+    font-weight: bold;
+    font-size: 18px;
+}

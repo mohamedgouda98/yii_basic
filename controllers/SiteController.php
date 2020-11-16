@@ -10,6 +10,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+use app\models\User;
+
 class SiteController extends Controller
 {
     /**
@@ -97,6 +99,11 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+
+    public function actionRegister(){
+        return $this->render('register');
     }
 
     /**
